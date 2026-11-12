@@ -12,6 +12,10 @@ This offline prototype reads synthetic input and returns a recommendation or dia
 
 Run `make verify` with Make and Python 3 installed. The sample runs through the CLI and its JSON is compared with `expected.json`.
 
+## Business problem
+
+During a Spark incident, operators need to distinguish memory, shuffle, and executor symptoms in a log excerpt before choosing a runbook.
+
 ## Project walkthrough
 
 ```mermaid

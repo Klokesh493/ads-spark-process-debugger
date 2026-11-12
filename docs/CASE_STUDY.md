@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Classify common Spark process failures from synthetic log excerpts.
+During a Spark incident, operators need to distinguish memory, shuffle, and executor symptoms in a log excerpt before choosing a runbook.
 
 ## Reproduce the workflow
 
