@@ -14,4 +14,16 @@ Run `make verify` with Make and Python 3 installed. The sample runs through the 
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Spark log excerpt"]
+    B["Normalize case and match signature groups"]
+    C{"Known symptom present?"}
+    D["Memory, shuffle, or executor categories"]
+    E["Empty category list"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)

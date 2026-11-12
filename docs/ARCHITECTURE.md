@@ -4,11 +4,14 @@ Classify common Spark process failures from synthetic log excerpts.
 
 ```mermaid
 flowchart LR
-    N0["example.json"]
-    N1["agent.py"]
-    N2["Match log evidence against known failure patterns."]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Spark log excerpt"]
+    B["Normalize case and match signature groups"]
+    C{"Known symptom present?"}
+    D["Memory, shuffle, or executor categories"]
+    E["Empty category list"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries
